@@ -1,0 +1,11 @@
+The conversion is rather simple, the user inputs the desired coin to convert from (choices would be from AXS, SLP, ETH or Official Currency) and to (choices would be from AXS, SLP, ETH or Official Currency)
+the program then proceeds to convert the desired coin by getting the real time value of both coins from the internet with the help of API and uses simple math for the conversion. 
+
+For example, we would be converting 150 SLP into PHP (assuming user input is :CONVERT SLP: and :CONVERT INTO PHP:):
+User Input = 150 SLP
+SLP Real Time Value in PHP = 3.44 PHP
+
+SLP Value as of November 3, 2021, 1:08 PM PH standard time = 3.44 PHP per SLP [data from https://www.coingecko.com]
+
+Output = (User Input) * (SLP Real Time Value in PHP)
+Output = 516 PHP
