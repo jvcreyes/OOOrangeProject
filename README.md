@@ -1,8 +1,6 @@
 # OOOrangeProject
-Contributors: 
-
-Maglunsod, Dondie Emmanuel 
-Reyes, John Vincent Cullen R.
+Team Leader: Reyes, John Vincent Cullen R.
+Member: Maglunsod, Dondie Emmanuel 
 
 
 
