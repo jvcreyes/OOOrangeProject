@@ -1,0 +1,38 @@
+@startuml
+hide circle
+hide empty members
+
+"Axie Infinity Coins Converter" --> User
+User --> CoinX
+User --> CoinY
+CoinX --> "CoinX:Y"
+CoinY --> "CoinX:Y"
+"CoinX:Y" --> User
+User -right-> "n Coin"
+"n Coin" -right-> Result
+
+class User {
+input()
+}
+
+class CoinX {
+input()
+}
+
+class CoinY {
+input()
+}
+
+class "CoinX:Y" {
+display()
+}
+
+class "n Coin" {
+input()
+}
+
+class Result {
+n Coin * [CoinX:Y[CoinY]]
+display()
+}
+@enduml
