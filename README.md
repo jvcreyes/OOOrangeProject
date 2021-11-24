@@ -13,8 +13,8 @@ Axie Infinity is a game that allows players to collect, breed, raise, battle and
 
 
 Features:
-- Conversion of Ethereum(ETH) into any known official currency.
-- Conversion of Axie Infinity Shard(AXS) into any known official currency.
-- Conversion of Smooth Love Potion(SLP) into any known official currency.
+- Conversion of Fiat Currencies.
+- Conversion of Smooth Love Potion(SLP) into any known fiat currency.
+- Conversion of Ethereum(ETH) into any known fiat currency.
+- Conversion of Axie Infinity Shard(AXS) into any known fiat currency.
 - Operates on Real Time data since Cryptocurrencies are volatile and can change prices at any given moment.
-- Conversion of Official Currencies.
