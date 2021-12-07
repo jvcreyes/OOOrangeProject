@@ -22,6 +22,7 @@ class GetCurrencyValue(URL):
         main_url = self.converge
         return main_url
 
+
 def GetData(main_url):
     URLdata = requests.get(main_url)
     URLdatajson = URLdata.json()
@@ -29,6 +30,7 @@ def GetData(main_url):
           ['5. Exchange Rate'],URLdatajson["Realtime Currency Exchange Rate"]["4. To_Currency Name"])
     x = URLdatajson["Realtime Currency Exchange Rate"]['5. Exchange Rate']
     return x
+
 
 def Compute(main_url):
     URLdata = requests.get(main_url)
@@ -154,6 +156,7 @@ def main():
               "\n5 - Exit"
               "\nWhat would you like to do?:")
         user_input = int(input())
+
         if user_input == 1:
             from_currency = str(input("Convert from: "))
             to_currency = str(input("To: "))
@@ -162,25 +165,30 @@ def main():
             main_url = url.converge()
             GetData(main_url)
             Compute(main_url)
+
         if user_input == 2:
             vs_currencies = str(input("Convert SLP to: "))
             url = GetCurrencyValueSLP(vs_currencies)
             main_url = url.convergeSLP()
             GetDataSLP(main_url, vs_currencies)
             ComputeSLP(main_url, vs_currencies)
+
         if user_input == 3:
             vs_currencies = str(input("Convert ETH to: "))
             url = GetCurrencyValueETH(vs_currencies)
             main_url = url.convergeETH()
             GetDataETH(main_url, vs_currencies)
             ComputeETH(main_url, vs_currencies)
+
         if user_input == 4:
             vs_currencies = str(input("Convert AXS to: "))
             url = GetCurrencyValueAXS(vs_currencies)
             main_url = url.convergeAXS()
             GetDataAXS(main_url, vs_currencies)
             ComputeAXS(main_url, vs_currencies)
+
         if user_input == 5:
             print("~Thank you for using Axie Infinity Coins Converter!~")
             exit()
+            
 main()
