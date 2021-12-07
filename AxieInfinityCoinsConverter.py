@@ -8,7 +8,7 @@ class URL():
         self.URL = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE"
 
 
-class GetCurrencyValue(URL):
+class GetCurrencyValue(URL): #Class that has a function that converges/merge variables to get the main url
 
     def __init__(self,from_currency, to_currency, api_key):
         URL.__init__(self, URL)
@@ -23,7 +23,7 @@ class GetCurrencyValue(URL):
         return main_url
 
 
-def GetData(main_url):
+def GetData(main_url):  #function to get the data from the main url and convert it to json file
     URLdata = requests.get(main_url)
     URLdatajson = URLdata.json()
     print("1",URLdatajson["Realtime Currency Exchange Rate"]["2. From_Currency Name"], "=", URLdatajson["Realtime Currency Exchange Rate"]
@@ -32,7 +32,7 @@ def GetData(main_url):
     return x
 
 
-def Compute(main_url):
+def Compute(main_url): #function to compute for the converted amount
     URLdata = requests.get(main_url)
     URLdatajson = URLdata.json()
     x_raw = URLdatajson["Realtime Currency Exchange Rate"]['5. Exchange Rate']
@@ -47,46 +47,46 @@ class CGURL():
         self.CGURL = "https://api.coingecko.com/api/v3/simple/price?"
 
 
-class GetCurrencyValueSLP(CGURL):
+class GetCurrencyValueSLP(CGURL): #Class that has a function that converges/merge variables to get the main url
 
     def __init__(self, vs_currencies):
         CGURL.__init__(self,CGURL)
         self.CGURL = "https://api.coingecko.com/api/v3/simple/price?"
         self.vs_currencies = vs_currencies
 
-    def convergeSLP(self):
+    def convergeSLP(self): #merge function
         self.converge = self.CGURL + "ids=smooth-love-potion&vs_currencies=" + self.vs_currencies
         main_urlSLP = self.converge
         return main_urlSLP
 
 
-class GetCurrencyValueETH(CGURL):
+class GetCurrencyValueETH(CGURL): #Class that has a function that converges/merge variables to get the main url
 
     def __init__(self, vs_currencies):
         CGURL.__init__(self, CGURL)
         self.CGURL = "https://api.coingecko.com/api/v3/simple/price?"
         self.vs_currencies = vs_currencies
 
-    def convergeETH(self):
+    def convergeETH(self): #merge function
         self.convergeETH = self.CGURL + "ids=ethereum&vs_currencies=" + self.vs_currencies
         main_urlETH = self.convergeETH
         return main_urlETH
 
 
-class GetCurrencyValueAXS(CGURL):
+class GetCurrencyValueAXS(CGURL): #Class that has a function that converges/merge variables to get the main url
 
     def __init__(self, vs_currencies):
         CGURL.__init__(self, CGURL)
         self.CGURL = "https://api.coingecko.com/api/v3/simple/price?"
         self.vs_currencies = vs_currencies
 
-    def convergeAXS(self):
+    def convergeAXS(self): #merge function
         self.convergeAXS = self.CGURL + "ids=axie-infinity&vs_currencies=" + self.vs_currencies
         main_urlAXS = self.convergeAXS
         return main_urlAXS
 
 
-def GetDataSLP(main_url, vs_currencies):
+def GetDataSLP(main_url, vs_currencies): #function to get the data from the main url and convert it to json file
     URLdataSLP = requests.get(main_url)
     URLdataSLPjson = URLdataSLP.json()
     print("Realtime Currency Exchange Rate for 1 Smooth Love Potion (SLP) is",
@@ -96,7 +96,7 @@ def GetDataSLP(main_url, vs_currencies):
     return x
 
 
-def GetDataETH(main_url, vs_currencies):
+def GetDataETH(main_url, vs_currencies):  #function to get the data from the main url and convert it to json file
     URLdata = requests.get(main_url)
     URLdatajson = URLdata.json()
     print("Realtime Currency Exchange Rate for 1 Ethereum (ETH) is",
@@ -106,7 +106,7 @@ def GetDataETH(main_url, vs_currencies):
     return x
 
 
-def GetDataAXS(main_url, vs_currencies):
+def GetDataAXS(main_url, vs_currencies):  #function to get the data from the main url and convert it to json file
     URLdata = requests.get(main_url)
     URLdatajson = URLdata.json()
     print("Realtime Currency Exchange Rate for 1 Axie Infinity (AXS) is",
@@ -116,7 +116,7 @@ def GetDataAXS(main_url, vs_currencies):
     return x
 
 
-def ComputeSLP(main_url, vs_currencies):
+def ComputeSLP(main_url, vs_currencies): #function to compute for the converted amount
     URLdataSLP = requests.get(main_url)
     URLdataSLPjson = URLdataSLP.json()
     x_raw = URLdataSLPjson["smooth-love-potion"][vs_currencies]
@@ -127,7 +127,7 @@ def ComputeSLP(main_url, vs_currencies):
     print(value,"SLP", "=", result, vs_currencies)
 
 
-def ComputeETH(main_url, vs_currencies):
+def ComputeETH(main_url, vs_currencies): #function to compute for the converted amount
     URLdata = requests.get(main_url)
     URLdatajson = URLdata.json()
     x_raw = URLdatajson["ethereum"][vs_currencies]
@@ -137,7 +137,7 @@ def ComputeETH(main_url, vs_currencies):
     print(value,"ETH", "=", result, vs_currencies)
 
 
-def ComputeAXS(main_url, vs_currencies):
+def ComputeAXS(main_url, vs_currencies): #function to compute for the converted amount
     URLdata = requests.get(main_url)
     URLdatajson = URLdata.json()
     x_raw = URLdatajson["axie-infinity"][vs_currencies]
@@ -147,7 +147,7 @@ def ComputeAXS(main_url, vs_currencies):
     print(value,"AXS", "=", result, vs_currencies)
 
 
-def main():
+def main(): #main function of the program 
     while True:
         print("\n1 - Convert Fiat Currency"
               "\n2 - Convert SLP"
@@ -190,5 +190,5 @@ def main():
         if user_input == 5:
             print("~Thank you for using Axie Infinity Coins Converter!~")
             exit()
-            
+
 main()
