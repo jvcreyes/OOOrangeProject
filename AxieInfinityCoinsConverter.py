@@ -4,13 +4,14 @@ import requests
 class URL():
 
     def __init__(self, URL):
+        self.URL = URL
         self.URL = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE"
 
 
 class GetCurrencyValue(URL):
 
     def __init__(self,from_currency, to_currency, api_key):
-        URL.__init__(self,URL)
+        URL.__init__(self, URL)
         self.URL = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE"
         self.from_currency = from_currency
         self.to_currency = to_currency
@@ -41,13 +42,13 @@ def Compute(main_url):
 
 class CGURL():
     def __init__(self, CGURL):
-        self.URL = "https://api.coingecko.com/api/v3/simple/price?"
+        self.CGURL = "https://api.coingecko.com/api/v3/simple/price?"
 
 
 class GetCurrencyValueSLP(CGURL):
 
     def __init__(self, vs_currencies):
-        CGURL.__init__(self,URL)
+        CGURL.__init__(self,CGURL)
         self.CGURL = "https://api.coingecko.com/api/v3/simple/price?"
         self.vs_currencies = vs_currencies
 
@@ -82,6 +83,7 @@ class GetCurrencyValueAXS(CGURL):
         main_urlAXS = self.convergeAXS
         return main_urlAXS
 
+
 def GetDataSLP(main_url, vs_currencies):
     URLdataSLP = requests.get(main_url)
     URLdataSLPjson = URLdataSLP.json()
@@ -90,6 +92,7 @@ def GetDataSLP(main_url, vs_currencies):
           [vs_currencies], vs_currencies)
     x = URLdataSLPjson["smooth-love-potion"][vs_currencies]
     return x
+
 
 def GetDataETH(main_url, vs_currencies):
     URLdata = requests.get(main_url)
@@ -100,6 +103,7 @@ def GetDataETH(main_url, vs_currencies):
     x = URLdatajson["ethereum"][vs_currencies]
     return x
 
+
 def GetDataAXS(main_url, vs_currencies):
     URLdata = requests.get(main_url)
     URLdatajson = URLdata.json()
@@ -108,6 +112,7 @@ def GetDataAXS(main_url, vs_currencies):
           [vs_currencies], vs_currencies)
     x = URLdatajson["axie-infinity"][vs_currencies]
     return x
+
 
 def ComputeSLP(main_url, vs_currencies):
     URLdataSLP = requests.get(main_url)
@@ -119,6 +124,7 @@ def ComputeSLP(main_url, vs_currencies):
     result = (value) * (x)
     print(value,"SLP", "=", result, vs_currencies)
 
+
 def ComputeETH(main_url, vs_currencies):
     URLdata = requests.get(main_url)
     URLdatajson = URLdata.json()
@@ -127,6 +133,7 @@ def ComputeETH(main_url, vs_currencies):
     value =float((input("Enter Amount In Ethereum (ETH): ")))
     result = (value) * (x)
     print(value,"ETH", "=", result, vs_currencies)
+
 
 def ComputeAXS(main_url, vs_currencies):
     URLdata = requests.get(main_url)
@@ -140,7 +147,7 @@ def ComputeAXS(main_url, vs_currencies):
 
 def main():
     while True:
-        print("\n1 - Convert Official Currency"
+        print("\n1 - Convert Fiat Currency"
               "\n2 - Convert SLP"
               "\n3 - Convert ETH"
               "\n4 - Convert AXS"
