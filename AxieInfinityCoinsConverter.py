@@ -1,6 +1,7 @@
 import json
 import requests
 
+
 class URL():
 
     def __init__(self, URL):
@@ -8,7 +9,7 @@ class URL():
         self.URL = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE"
 
 
-class GetCurrencyValue(URL): #Class that has a function that converges/merge variables to get the main url
+class GetCurrencyValue(URL): #Class that has a function that converges/merges variables to get the main url
 
     def __init__(self,from_currency, to_currency, api_key):
         URL.__init__(self, URL)
@@ -43,6 +44,7 @@ def Compute(main_url): #function to compute for the converted amount
 
 
 class CGURL():
+
     def __init__(self, CGURL):
         self.CGURL = "https://api.coingecko.com/api/v3/simple/price?"
 
@@ -147,17 +149,18 @@ def ComputeAXS(main_url, vs_currencies): #function to compute for the converted 
     print(value,"AXS", "=", result, vs_currencies)
 
 
-def main(): #main function of the program 
-    while True:
-        print("\n1 - Convert Fiat Currency"
+def main(): #main function of the program
+
+    while True: #while loop
+        print("\n1 - Convert Fiat Currency" 
               "\n2 - Convert SLP"
               "\n3 - Convert ETH"
               "\n4 - Convert AXS"
               "\n5 - Exit"
-              "\nWhat would you like to do?:")
-        user_input = int(input())
+              "\nWhat would you like to do?:") #to print out/display instructions
+        user_input = int(input()) #user input (integer)
 
-        if user_input == 1:
+        if user_input == 1: #if user inputs option 1
             from_currency = str(input("Convert from: "))
             to_currency = str(input("To: "))
             api_key = "Q5GOJP1I9VYFSRPB"
@@ -166,29 +169,29 @@ def main(): #main function of the program
             GetData(main_url)
             Compute(main_url)
 
-        if user_input == 2:
+        if user_input == 2: #if user inputs option 2
             vs_currencies = str(input("Convert SLP to: "))
             url = GetCurrencyValueSLP(vs_currencies)
             main_url = url.convergeSLP()
             GetDataSLP(main_url, vs_currencies)
             ComputeSLP(main_url, vs_currencies)
 
-        if user_input == 3:
+        if user_input == 3: #if user inputs option 3
             vs_currencies = str(input("Convert ETH to: "))
             url = GetCurrencyValueETH(vs_currencies)
             main_url = url.convergeETH()
             GetDataETH(main_url, vs_currencies)
             ComputeETH(main_url, vs_currencies)
 
-        if user_input == 4:
+        if user_input == 4: #if user inputs option 4
             vs_currencies = str(input("Convert AXS to: "))
             url = GetCurrencyValueAXS(vs_currencies)
             main_url = url.convergeAXS()
             GetDataAXS(main_url, vs_currencies)
             ComputeAXS(main_url, vs_currencies)
 
-        if user_input == 5:
+        if user_input == 5: #if user inputs option 5
             print("~Thank you for using Axie Infinity Coins Converter!~")
             exit()
 
-main()
+main() #run the main program
