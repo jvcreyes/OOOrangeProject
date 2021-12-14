@@ -41,7 +41,11 @@ Definition of Terms
 	
 	
 	
+	
+	
 	Axie Infinity - is a Pokemon-inspired digital pet universe developed by SkyMavis where players use in-game characters/pets called Axies to battle and earn rewards.
+	
+	
 	
 	
 	
@@ -49,7 +53,11 @@ Definition of Terms
 	
 	
 	
+	
+	
 	Axie Infinity Tokens - are rewards that you can earn through playing the game Axie Infinity (namely: SLP & AXS).
+	
+	
 	
 	
 	
@@ -57,7 +65,11 @@ Definition of Terms
 	
 	
 	
+	
+	
 	Cryptocurrency - sometimes called crypto-currency or crypto, is any form of currency that exists digitally or virtually and uses cryptography to secure transactions. Cryptocurrencies don't have a central issuing or regulating authority, instead using a decentralized system to record transactions and issue new units.
+	
+	
 	
 	
 	
@@ -65,7 +77,11 @@ Definition of Terms
 	
 	
 	
+	
+	
 	Fiat Currency - is a government-issued currency that is not backed by a commodity such as gold. Most modern paper currencies, such as the U.S. dollar, Philippine Peso, or Japanese Yen are Fiat Currencies.
+	
+	
 	
 	
 	
@@ -73,7 +89,11 @@ Definition of Terms
 	
 	
 	
+	
+	
 	Smooth Love Potion [SLP] - is a reward that you earn by playing Axie Infinity. It is collected, sold, bought and used to breed pets called 'Axies'.
+	
+	
 	
 	
 	
