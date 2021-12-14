@@ -8,7 +8,7 @@ Member: Maglunsod, Dondie Emmanuel
 
 
 
-Axie Infinity is a game that allows players to collect, breed, raise, battle and trade creatures known as 'Axies' which are digitized NFT's (Non-Fungible Token). The game is categorized as a 'play-to-earn' genre where players can earn tokens that can be traded on Binance as an Ethereum-based cryptocurrency. For more info on Axie Infinity, visit: https://axieinfinity.com/. This app focuses on the conversion of Axie Infinity Tokens namely: Ethereum(ETH), Axie Infinity(AXS), and SLP(Smooth Love Potion) into fiat currencies. It will be a useful app for easily converting tokens to fiat currencies.
+Axie Infinity is a game that allows players to collect, breed, raise, battle and trade creatures known as 'Axies' which are digitized NFT's (Non-Fungible Token). The game is categorized as a 'play-to-earn' genre where players can earn tokens that can be traded on Binance as an Ethereum-based cryptocurrency. For more info on Axie Infinity, visit: https://axieinfinity.com/. This app focuses on the conversion of Axie Infinity Tokens namely: Ethereum(ETH), Axie Infinity Shard(AXS), and SLP(Smooth Love Potion) into fiat currencies. It will be a useful app for easily converting tokens to fiat currencies.
 
 
 
@@ -22,7 +22,7 @@ Features:
 
 Conversion Process
 
-	The conversion is rather simple, the user inputs the desired coin to convert from (choices would be from AXS, SLP, ETH or Official Currency) and to (choices would be 	from AXS, SLP, ETH or Official Currency)
+	The conversion is rather simple, the user inputs the desired coin to convert from (choices would be from AXS, SLP, ETH or Fiat Currency) and to (Fiat Currency)
 	the program then proceeds to convert the desired coin by getting the real time value of both coins from the internet with the help of API and uses simple math for the conversion. 
 
 	For example, we would be converting 150 SLP into PHP (assuming user input is :CONVERT SLP: and :CONVERT INTO PHP:):
@@ -51,7 +51,7 @@ Definition of Terms
 	
 	
 	
-	Axie Infinity Shards[AXS] - is a reward that you earn by playing Axie Infinity. It is collected, 
+	Axie Infinity Shards[AXS] - It is an ERC-20 token built on the Ethereum Blockchain. It is also a reward that you earn by playing Axie Infinity. It is collected, 
 	sold, bought and used to breed pets called 'Axies'.
 	
 	
@@ -101,7 +101,7 @@ Definition of Terms
 	
 	
 	
-	Smooth Love Potion [SLP] - is a reward that you earn by playing Axie Infinity. It is collected, 
+	Smooth Love Potion [SLP] - it is the in-game currency that users exchange for cash and is a reward that you earn by playing Axie Infinity. It is collected, 
 	sold, bought and used to breed pets called 'Axies'.
 	
 	
