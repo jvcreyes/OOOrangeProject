@@ -38,8 +38,9 @@ Conversion Process
 	
 Definition of Terms
 	
-	Axies - are digital pets/characters that you use to battle in the Axie Infinity universe. Such in-game creatures can 
-	be raised, bred and sold through the market(https://marketplace.axieinfinity.com/).
+	Axies - are unique digital creatures/pets which players use to battle in the Axie Infinity 
+	Universe represented by Non-Fungible Tokens (NFTs). Such in-game creatures can be collected, 
+	bred and sold through the market(https://marketplace.axieinfinity.com/).
 	
 	
 	
@@ -52,10 +53,9 @@ Definition of Terms
 	
 	
 	
-	Axie Infinity Shard[AXS] - It is an ERC-20 token built on the Ethereum Blockchain. It is also a reward that 
-	you earn by playing Axie Infinity. It is collected, sold, bought and used to breed digital pets called 'Axies'.
-	
-	
+	Axie Infinity Shard[AXS] - It is an ERC-20 token built on the Ethereum Blockchain. It is also a reward 
+	that can be earned by playing Axie Infinity and it is used to breed digital pets called ‘Axies’.
+
 	
 	
 	
@@ -102,8 +102,9 @@ Definition of Terms
 	
 	
 	
-	Smooth Love Potion [SLP] - it is the in-game currency that users exchange for cash and is 
-	a reward that you earn by playing Axie Infinity. It is collected, sold, bought and used to breed digital pets called 'Axies'.
+	Smooth Love Potion [SLP] - It is the in-game currency that users exchange for cash. It is also a reward 
+	that you earn by playing Axie Infinity and it is used to breed digital pets called ‘Axies’.
+
 	
 	
 	
