@@ -113,3 +113,7 @@ Definition of Terms
 	Volatile; Volatility - the term 'Volatility' in trading is a measure of how 
 	prices or returns are scattered over time for a particular asset or financial product. 
 	(example: Bitcoin is volatile. - means that the cryptocurrency named 'Bitcoin' changes market value constantly.)
+
+
+Demonstration:
+Youtube Video Link - https://youtu.be/qhWQycKETI8
